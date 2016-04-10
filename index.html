@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<section>
+
+  <h2> Useful links </h2>
+  <h3><a href="http://bit.ly/pmd323resume">My Resume</a></h3> 
+  <h3><a href="http://pedromduarte.github.io/pmd-github-profile/">Github profile highlights [link]</a></h3> 
+  <h3><a href="http://stackoverflow.com/users/1476240/pedro-m-duarte?tab=answers">Stack Overflow answers [link]</a></h3> 
+
+  <h2>Journal</h2>
+
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
