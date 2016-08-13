@@ -4,22 +4,43 @@ layout: default
 
 <section>
 
-  <h2> Useful links </h2>
-  <h3>
-    <a href="{{ "/resume" | prepend: site.baseurl }}">My resume</a>
-    <a href="http://bit.ly/pmd323resume">[PDF]</a>  
-    <a href="{{ "/resume" | prepend: site.baseurl }}">[HTML]</a> </h3> 
-  <h3><a href="http://pedromduarte.github.io/pmd-github-profile/">Github profile highlights</a></h3> 
-  <h3><a href="http://stackoverflow.com/users/1476240/pedro-m-duarte?tab=answers">Stack Overflow answers</a></h3> 
-  <a href="http://stackexchange.com/users/1593422/pedro-m-duarte"><img src="http://stackexchange.com/users/flair/1593422.png" width="208" height="58" alt="profile for Pedro M Duarte on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for Pedro M Duarte on Stack Exchange, a network of free, community-driven Q&amp;A sites" /></a>
-  <h2>Journal</h2>
+    <br>
+    <a href="{{ "/resume" | prepend: site.baseurl }}">[resume html]</a>
+    <a href="http://bit.ly/pmd323resume">[resume pdf]</a>  
+    <a href="http://stackoverflow.com/users/1476240/pedro-m-duarte?tab=answers">[stack overflow answers]</a>
+  </p>
+  <a href="http://stackexchange.com/users/1593422/pedro-m-duarte">
+      <img src="http://stackexchange.com/users/flair/1593422.png" width="208" height="58" 
+      alt="profile for Pedro M Duarte on Stack Exchange, a network of free, community-driven Q&amp;A sites" 
+      title="profile for Pedro M Duarte on Stack Exchange, a network of free, community-driven Q&amp;A sites" /></a>
 
+  <h3>Journal</h3>
   <ul class="posts">
-    {% for post in site.posts %}
+    {% for post in site.categories.journal %}
       <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <span class="post-date" style="font-weight:bold">
+          {{ post.date | date: "%b %-d, %Y" }}
+      </span> - 
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+        <a href="{{ post.url | prepend: site.baseurl }}">read more ...</a> </p>
       </li>
     {% endfor %}
   </ul>
+
+  <br>
+  <h3>Projects</h3>
+
+  {% for repo in site.categories.recentprojects %}
+  {% include repo-detail.html %}
+  {% endfor %}
+  <br>
+
+  <h5>from graduate school:</h5>
+  {% for repo in site.categories.gradschool %}
+  {% include repo-detail.html %}
+  {% endfor %}
+  <br>
+  <hr>
+
 </section>

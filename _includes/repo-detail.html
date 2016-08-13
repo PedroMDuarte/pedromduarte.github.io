@@ -1,0 +1,26 @@
+
+  <div class="repo-info-box">
+      <h3> <span class="repo-title"> {{ repo.title }} </span> &nbsp; <a class="repo-link" href="{{ repo.githuburl }}">[{{ repo.reponame }}]</a></h3>
+      {% if repo.zenodobadge %}
+          <p class="repo-zenodobadge">{{ repo.zenodobadge }} </p> 
+      {% endif %}
+      <div>
+
+          <!--
+          <p> &nbsp;&diams; <span class="repo-created">created:</span> {{ repo.created | date: "%b %-d, %Y" }} &nbsp;&diams;
+          <span class="repo-last-modified">last modified:</span> {{ repo.modified | date: "%b %-d, %Y" }} </p> -->
+          <p> &nbsp;&diams;
+          <span class="repo-languages">languages/packages:</span> {{ repo.languages }} </p> 
+          <p> &nbsp;&diams;
+          <span class="repo-keywords">keywords:</span> {{ repo.keywords }} </p>
+      </div> 
+      <!-- <p class="repo-summary">{{ repo.summary }} </p> -->
+      <div class="row">
+        <div class="col-md-9" role="main">
+        <div class="collapse-group">
+           <div class="collapse"> {{ repo.content }} </div>
+          <p><a class="btn clickbtn details-button" href="#">View details &raquo;</a></p>
+        </div>
+        </div>
+      </div>
+  </div>

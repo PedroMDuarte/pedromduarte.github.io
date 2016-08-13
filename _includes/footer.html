@@ -1,3 +1,21 @@
 <footer>
   <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
 </footer>
+
+<script type="text/javascript">
+$('.clickbtn').on('click', function(e) {
+    console.log("clicked it");
+    e.preventDefault();
+    var $this = $(this);
+    var $collapse = $this.closest('.collapse-group').find('.collapse');
+    $collapse.collapse('toggle');
+
+    // toggle the button text
+    $this.toggleClass('clickbtn');
+    if($this.hasClass('clickbtn')){
+      $this.text('View details \u00bb');
+    } else {
+      $this.text('Hide details \u00bb');
+    }
+});
+</script>

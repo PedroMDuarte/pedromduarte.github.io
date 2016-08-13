@@ -217,7 +217,7 @@ td {
 header {
 	background-color: #171717;
 	color: #FDFDFB;
-  width:170px;
+  width:280px;
   float:left;
   position:fixed;
 	border: 1px solid #000;
@@ -266,7 +266,7 @@ header ul {
 header li {
 	list-style-type: none;
   width:132px;
-  height:15px;
+  height:30px;
 	margin-bottom: 12px;
 	line-height: 1em;
 	padding: 6px 6px 6px 7px;
@@ -297,7 +297,7 @@ header li:hover {
   background: linear-gradient(top, #C3001D 0%,#950119 100%);
 }
 
-a.buttons {
+a.header-buttons {
 	-webkit-font-smoothing: antialiased;
 	background: url(../images/arrow-down.png) no-repeat;
 	font-weight: normal;
@@ -310,7 +310,7 @@ a.github {
 	background: url(../images/octocat-small.png) no-repeat 1px;
 }
 
-a.buttons:hover {
+a.header-buttons:hover {
 	color: #fff;
 	text-decoration: none;
 }

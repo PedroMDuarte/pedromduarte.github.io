@@ -1,0 +1,29 @@
+
+.repo-created, .repo-last-modified, .repo-languages, .repo-keywords {
+    font-weight: bold;
+}
+
+.repo-info-box {
+    color: black;
+    /*background-color: #e6edf5;*/
+    background-color: #f2f2f2;
+    border-color: #39859e;
+    border-radius: 15px;
+    padding-left: 15px;
+    padding-right: 5px;
+}
+
+.details-button {
+    border: 1px solid;
+}
+
+.repo-title {
+    /*color: #2f5aa1;*/
+    color: #454442;
+    font-size: 14px;
+}
+
+
+.repo-link {
+    font-size: 14px;
+}
