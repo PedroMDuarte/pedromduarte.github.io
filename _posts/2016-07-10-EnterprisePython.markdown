@@ -1,7 +1,8 @@
---- layout: post
+--- 
+layout: post
 title:  "Enterprise Software with Python"
 date:   2016-07-10 10:37:49
-categories: python journal
+categories: journal python
 ---
 
 I started going through this series of training videos by Mahmoud
