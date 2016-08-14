@@ -86,7 +86,7 @@ these topics present themselves at his organization (Paypal).
 A lot of the content in this section is an excellent starting point for doing
 more research on a particular topic.  I have already come back to parts of this
 section.  Specifically the other day I wanted to profile a script I was working
-on to process some time series data, and the first think I did was go back to
+on to process some time series data, and the first thing I did was go back to
 the videos and get a quick review before digging further into the internet. 
 
 ### 4. Next steps
